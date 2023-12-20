@@ -12,7 +12,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp dist/ s3://your-s3-bucket/ --recursive
+      - aws s3 cp dist/ s3://lieldevops-vpro-arts/ --recursive
 
 artifacts:
   files: dist/**
